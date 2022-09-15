@@ -1,5 +1,5 @@
 import{useState} from 'react'
-import {View, ScrollView , StyleSheet, Text} from 'react-native'
+import {View, ScrollView , StyleSheet, Image, Text} from 'react-native'
 import {useTailwind} from 'tailwind-rn'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import DataRemain from './DataRemain';
@@ -14,6 +14,20 @@ function MainContent() {
   return (
 
     <View style={tw('py-4 px-2')}>
+
+      <View style={(tw('w-full px-2 py-1'))}>
+        <Image source={{uri:'https://i.imgur.com/GImvG4q.jpg'}} style={(tw('rounded w-full h-24'))}/>
+        <View style={tw('flex-row justify-center items-center py-2')}>
+            <View style={{ borderRadius: 5,borderWidth: 4, borderColor: 'red',marginRight:'0.5rem'}}/>
+            <View style={{ borderRadius: 5,borderWidth: 4, borderColor: 'rgb(71, 85, 105)',marginRight:'0.5rem'}}/>
+            <View style={{ borderRadius: 5,borderWidth: 4, borderColor: 'rgb(71, 85, 105)',marginRight:'0.5rem'}}/>
+            <View style={{ borderRadius: 5,borderWidth: 4, borderColor: 'rgb(71, 85, 105)',marginRight:'0.5rem'}}/>
+            <View style={{ borderRadius: 5,borderWidth: 4, borderColor: 'rgb(71, 85, 105)'}}/>
+          </View>
+      </View>
+
+
+
       <Tab.Navigator
        screenOptions={{
         tabBarStyle: {backgroundColor:'transparent'},

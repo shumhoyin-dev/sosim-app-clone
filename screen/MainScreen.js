@@ -7,6 +7,7 @@ import Footer from '../component/Footer';
 import Icon from 'react-native-vector-icons/Entypo';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
+import ImageCarousel from '../component/ImageCarousel';
 
 
 function MainScreen(props) {
