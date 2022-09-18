@@ -1,18 +1,15 @@
-import React from 'react'
-import { Text,SafeAreaView , Pressable,Image,View , ScrollView} from 'react-native';
-import {useTailwind} from 'tailwind-rn';
-import  Header from '../component/Header';
-import MainContent from '../component/MainContent';
-import Footer from '../component/Footer';
-import Icon from 'react-native-vector-icons/Entypo';
-import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
-import ImageCarousel from '../component/ImageCarousel';
+import { LinearGradient } from 'expo-linear-gradient';
+import React from 'react';
+import { Image, Pressable, ScrollView, Text, View } from 'react-native';
+import Icon from 'react-native-vector-icons/Entypo';
+import { useTailwind } from 'tailwind-rn';
+import Footer from '../component/Footer';
+import MainContent from '../component/MainContent';
 
 
 function MainScreen(props) {
     const tw = useTailwind()
-    console.log(props)
     const navigation = useNavigation();
   return (
     <>
@@ -48,7 +45,11 @@ function MainScreen(props) {
         
         
         </LinearGradient>
+        <Pressable onPress={()=>navigation.navigate('Share')}>
+                  <Icon style={tw('text-white')} name="menu" size={30} />
+        </Pressable>
         <MainContent />
+        
       </ScrollView>
       <Footer/>
     </>

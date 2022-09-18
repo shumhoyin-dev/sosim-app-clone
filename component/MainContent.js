@@ -1,10 +1,9 @@
-import{useState} from 'react'
-import {View, ScrollView , StyleSheet, Image, Text} from 'react-native'
-import {useTailwind} from 'tailwind-rn'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { Image, View } from 'react-native';
+import { useTailwind } from 'tailwind-rn';
 import DataRemain from './DataRemain';
-import Roaming from './Roaming';
 import Existing from './Existing';
+import Roaming from './Roaming';
 
 const Tab = createMaterialTopTabNavigator();
 
