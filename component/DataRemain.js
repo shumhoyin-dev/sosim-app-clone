@@ -14,9 +14,9 @@ function DataRemain() {
             用量結餘
         </Text>
 
-        <DataCard/>
-        <DataCard/>
-        <DataCard/>
+        <DataCard  title='本地數據' desc="" usage="59.87GB" total="60GB"/>
+        <DataCard  title='語音通話' desc="" usage="59.87" total="60分鐘"/>
+        <DataCard  title='網內短訊' desc="" usage="500" total="500"/>
 
         <Pressable style={tw('text-center text-white py-2 bg-red-500 rounded-full my-2 ')}>
             <View style={tw('flex-row justify-center items-center')}>

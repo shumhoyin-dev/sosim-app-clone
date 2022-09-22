@@ -3,15 +3,6 @@ import React from 'react';
 import Quota from '../component/Quota';
 import TabNavigator from './TabNavigator';
 
-function ModalScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{ fontSize: 30 }}>This is a modal!</Text>
-      <Button onPress={() => navigation.goBack()} title="Dismiss" />
-    </View>
-  );
-}
-
 function StackNavigator() {
     const StackNavigator = createStackNavigator();
     return (

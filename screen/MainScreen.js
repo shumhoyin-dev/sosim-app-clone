@@ -45,9 +45,7 @@ function MainScreen(props) {
         
         
         </LinearGradient>
-        <Pressable onPress={()=>navigation.navigate('Share')}>
-                  <Icon style={tw('text-white')} name="menu" size={30} />
-        </Pressable>
+
         <MainContent />
         
       </ScrollView>

@@ -5,7 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useTailwind } from 'tailwind-rn';
 
 
-function DataCard() {
+function DataCard({title , desc, usage , total }) {
   const tw = useTailwind();
   const navigaiton = useNavigation();
   return (
@@ -13,10 +13,10 @@ function DataCard() {
             <View style={tw('grow')}>
                 <View style={tw('flex-row grow items-center justify-between mb-1')}>
                     <Text >
-                        本地數據
+                        {title}
                     </Text>
                     <Text>
-                        59.64/GB / 60GB
+                       {usage} / {total}
                     </Text>
                 </View>
                 <View style={tw('w-full h-2 bg-red-500 rounded-full')}/>
