@@ -5,12 +5,13 @@ import AntDesign from 'react-native-vector-icons/AntDesign'
 import Entypo from 'react-native-vector-icons/Entypo'
 import Feather from 'react-native-vector-icons/Feather'
 import { useTailwind } from 'tailwind-rn'
+import CircularProgress from 'react-native-circular-progress-indicator'
 
 function Quota() {
   const tw = useTailwind();
   const navigation = useNavigation();
   return (
-    <View style={{flex:1,padding:'2rem'}}>
+    <View style={{flex:1,padding:32}}>
             <View style={tw('flex-row justify-between items-center py-2')}>
               <View style={tw('flex-row items-center')}>
                 <AntDesign style={tw('mr-3')} name="exclamationcircle" size={15} />
@@ -20,19 +21,28 @@ function Quota() {
                 <Entypo style={tw('')} name="cross" size={20} />
               </Pressable>
             </View>
-{/* 
-            <View style={tw('flex-row item-center justify-center py-6')}>
+
+            <View style={tw('flex-row items-center justify-center py-6')}>
 
               <CircularProgress
-              radius={90}
+                inActiveStrokeWidth={40}
+                activeStrokeWidth={40}
+                radius={110}
                 value={85}
                 inActiveStrokeColor={'#2ecc71'}
                 inActiveStrokeOpacity={0.2}
-                progressValueColor={'#fff'}
-                valueSuffix={'%'}
+                progressValueColor={'#000'}
+                valueSuffix={'GB'}
+                subtitle='合共有60GB'
+                subtitleFontSize={13}
+                progressValueStyle={{
+                  fontSize:30,
+                  fontWeight:'bold',
+                  color:'black'
+                }}
               />
             
-            </View> */}
+            </View>
 
    
             <View style={tw('my-2 px-3 py-3 bg-white rounded flex-row items-center')}>

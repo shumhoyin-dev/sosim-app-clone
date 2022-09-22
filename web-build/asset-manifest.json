@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/sosim-app-clone/static/js/app.05a976a2.chunk.js",
-    "app.js.map": "/sosim-app-clone/static/js/app.05a976a2.chunk.js.map",
+    "app.js": "/sosim-app-clone/static/js/app.f361f6fe.chunk.js",
+    "app.js.map": "/sosim-app-clone/static/js/app.f361f6fe.chunk.js.map",
     "runtime~app.js": "/sosim-app-clone/static/js/runtime~app.ce30116b.js",
     "runtime~app.js.map": "/sosim-app-clone/static/js/runtime~app.ce30116b.js.map",
-    "static/js/2.16ccc64b.chunk.js": "/sosim-app-clone/static/js/2.16ccc64b.chunk.js",
-    "static/js/2.16ccc64b.chunk.js.map": "/sosim-app-clone/static/js/2.16ccc64b.chunk.js.map",
+    "static/js/2.0fb7f862.chunk.js": "/sosim-app-clone/static/js/2.0fb7f862.chunk.js",
+    "static/js/2.0fb7f862.chunk.js.map": "/sosim-app-clone/static/js/2.0fb7f862.chunk.js.map",
     "fonts/AntDesign.ttf": "/sosim-app-clone/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/sosim-app-clone/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/sosim-app-clone/./fonts/Feather.ttf",
@@ -24,7 +24,7 @@
     "index.html": "/sosim-app-clone/index.html",
     "manifest.json": "/sosim-app-clone/manifest.json",
     "serve.json": "/sosim-app-clone/serve.json",
-    "static/js/2.16ccc64b.chunk.js.LICENSE.txt": "/sosim-app-clone/static/js/2.16ccc64b.chunk.js.LICENSE.txt",
+    "static/js/2.0fb7f862.chunk.js.LICENSE.txt": "/sosim-app-clone/static/js/2.0fb7f862.chunk.js.LICENSE.txt",
     "static/media/3HKlogo.png": "/sosim-app-clone/static/media/3HKlogo.b978edf8.png",
     "static/media/bell.png": "/sosim-app-clone/static/media/bell.cf04af27.png",
     "static/media/heart.png": "/sosim-app-clone/static/media/heart.23b5c2c0.png",
@@ -35,7 +35,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.ce30116b.js",
-    "static/js/2.16ccc64b.chunk.js",
-    "static/js/app.05a976a2.chunk.js"
+    "static/js/2.0fb7f862.chunk.js",
+    "static/js/app.f361f6fe.chunk.js"
   ]
 }

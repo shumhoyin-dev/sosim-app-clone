@@ -9,7 +9,8 @@ import { LinearGradient } from 'expo-linear-gradient';
 function DataRemain() {
     const tw = useTailwind();
   return (
-    <View style={tw('py-4  px-3 ')}>
+        <View style={{flex:1}}>
+                <View style={tw('py-4  px-3 ')}>
         <Text style={tw('text-sm ')}>
             用量結餘
         </Text>
@@ -18,7 +19,7 @@ function DataRemain() {
         <DataCard  title='語音通話' desc="" usage="59.87" total="60分鐘"/>
         <DataCard  title='網內短訊' desc="" usage="500" total="500"/>
 
-        <Pressable style={tw('text-center text-white py-2 bg-red-500 rounded-full my-2 ')}>
+        <Pressable style={tw('text-center text-white py-2 rbg-red-500 rounded-full my-2 ')}>
             <View style={tw('flex-row justify-center items-center')}>
                 <MaterialIcons style={tw('text-white mr-3')} name="shopping-basket" size={20} />
                 <Text style={tw('text-white')}>
@@ -36,6 +37,7 @@ function DataRemain() {
         </LinearGradient>
 
     </View>
+        </View>
   )
 }
 

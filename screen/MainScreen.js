@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
-import { Image, Pressable, ScrollView, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, Text, View, SafeAreaView } from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
 import { useTailwind } from 'tailwind-rn';
 import Footer from '../component/Footer';
@@ -13,9 +13,9 @@ function MainScreen(props) {
     const navigation = useNavigation();
   return (
     <>
-      <ScrollView>
-        {/* <Header goBack={navigation.openDrawer()}/> */}
+      <ScrollView style={{flex:1}}>
         <LinearGradient start={{x: 0, y: 0}} end={{x: 1, y: 0}} colors={['#273a96', '#0394a8']} style={ tw('py-1 px-5 ')}>
+          <SafeAreaView>
           <View style={ tw('flex-row justify-between items-center py-2')}>
               <View style={tw('flex-row items-center')}>
                   <Image
@@ -42,8 +42,7 @@ function MainScreen(props) {
                   9999 9999
               </Text>
           </View>
-        
-        
+          </SafeAreaView>
         </LinearGradient>
 
         <MainContent />
